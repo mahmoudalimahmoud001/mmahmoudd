@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XStore - Technology Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="topbar">
+        <p>Free shipping on orders over $100</p>
+        <p>EGP | English</p>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <a href="#" class="logo">X<span>STORE.</span></a>
+
+        <nav>
+            <a href="#home">HOME</a>
+            <a href="#products">OUR PRODUCTS</a>
+            <a href="#journal">JOURNAL</a>
+            <a href="#about">ABOUT US</a>
+            <a href="#contact">CONTACTS</a>
+        </nav>
+
+        <div class="header-icons">
+            <input type="text" id="search" placeholder="Search products...">
+            <button onclick="showCart()">🛒 <span id="cart-count">0</span></button>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <p class="small-title">NEW COLLECTION 2026</p>
+            <h1>Technology.<br>Entertainment.<br>Productivity.</h1>
+            <p>Discover the latest technology and smart devices.</p>
+            <a href="#products" class="main-btn">SHOP NOW →</a>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?w=900" alt="VR Headset">
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories">
+        <h2>Trending Categories</h2>
+        <div class="category-grid">
+            <div class="category">📷 <h3>CAMERA</h3></div>
+            <div class="category">💻 <h3>COMPUTER</h3></div>
+            <div class="category">🎮 <h3>CONTROLLER</h3></div>
+            <div class="category">🚁 <h3>DRONE</h3></div>
+            <div class="category">🎧 <h3>HEADPHONE</h3></div>
+            <div class="category">📱 <h3>PHONE</h3></div>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section class="products" id="products">
+        <div class="section-heading">
+            <p>OUR COLLECTION</p>
+            <h2>Discover Top Picks</h2>
+            <span>Top-selling tech essentials, trusted by customers.</span>
+        </div>
+
+        <div class="product-grid" id="product-list">
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500" alt="Headphones">
+                <p>HEADPHONES</p>
+                <h3>Wireless Headphones</h3>
+                <h4>EGP 2,500</h4>
+                <button onclick="addToCart('Wireless Headphones',2500)">ADD TO CART</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500" alt="Watch">
+                <p>SMART WATCH</p>
+                <h3>Smart Watch Pro</h3>
+                <h4>EGP 3,200</h4>
+                <button onclick="addToCart('Smart Watch Pro',3200)">ADD TO CART</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=500" alt="Camera">
+                <p>CAMERA</p>
+                <h3>Digital Camera</h3>
+                <h4>EGP 8,500</h4>
+                <button onclick="addToCart('Digital Camera',8500)">ADD TO CART</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=500" alt="Smart Watch">
+                <p>TECHNOLOGY</p>
+                <h3>Smart Watch</h3>
+                <h4>EGP 2,900</h4>
+                <button onclick="addToCart('Smart Watch',2900)">ADD TO CART</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Offer -->
+    <section class="offer">
+        <div>
+            <p>LIMITED TIME OFFER</p>
+            <h2>Up to 50% Off<br>On Headphones</h2>
+            <a href="#products" class="main-btn">DISCOVER SALES</a>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <div>
+            <p>ABOUT XSTORE</p>
+            <h2>Experience Electronics Like Never Before</h2>
+            <p>Discover innovative technology, smart devices and premium electronics. We bring you quality products and an amazing shopping experience.</p>
+        </div>
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800" alt="Technology">
+    </section>
+
+    <!-- Journal -->
+    <section class="journal" id="journal">
+        <div class="section-heading">
+            <p>OUR BLOG</p>
+            <h2>Interesting Journal</h2>
+            <span>Guides, reviews and tips from the world of technology.</span>
+        </div>
+
+        <div class="blog-grid">
+            <div class="blog-card">
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500" alt="Headphones">
+                <p>Electronics</p>
+                <h3>How to Choose the Best Headphones</h3>
+            </div>
+            <div class="blog-card">
+                <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=500" alt="Phone">
+                <p>Technology</p>
+                <h3>The Latest Smartphone Technology</h3>
+            </div>
+            <div class="blog-card">
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500" alt="Watch">
+                <p>Reviews</p>
+                <h3>Smart Watches and Their Features</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you.</p>
+        <form onsubmit="sendMessage(event)">
+            <input type="text" placeholder="First Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button class="main-btn">SEND MESSAGE</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h2>XSTORE.</h2>
+        <p>Experience Technology Like Never Before.</p>
+        <div>
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <p>Copyright © 2026 XStore. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
